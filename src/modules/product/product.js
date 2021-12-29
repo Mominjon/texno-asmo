@@ -28,7 +28,7 @@ const upload = multer({
 module.exports = {
     products: async (req, res) => {
         try {
-            const rows = await model.All_product()
+            // const rows = await model.All_product()
             res.send(rows)
         } catch (e) {
             console.log(e)
